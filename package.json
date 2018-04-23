@@ -1,0 +1,13 @@
+{
+  "name": "simple-cucumber",
+  "version": "0.0.1",
+  "scripts": {
+    "protractor": "node_modules\\.bin\\protractor protractor-conf.js"
+  },
+  "dependencies": {
+    "cucumber": "^3.1.0",
+    "protractor": "~5.3.0",
+    "protractor-cucumber-framework": "^4.0.9",
+    "chai": "^4.1.2"
+  }
+}
