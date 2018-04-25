@@ -11,9 +11,9 @@ class LoginPage extends Page{
         }
     }
     async login(name,pass){
-        await element(this.data['user name']).sendKeys(name);
-        await element(this.data.password).sendKeys(pass);
-        await element(this.data['login button']).click();
+        await this.data['user name'].sendKeys(name);
+        await this.data.password.sendKeys(pass);
+        await this.data['login button'].click();
     }
 }
 module.exports = LoginPage;
