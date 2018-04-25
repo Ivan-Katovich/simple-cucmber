@@ -14,8 +14,6 @@ Feature: first feature
   @first-one
   Scenario: second scenario
     Given I am on the 'login page'
-    Then Element 'logo' should be displayed
-    Then Element 'login button' should be displayed
     When I login to the application
     Then Element 'logo' should be displayed
     Then Element 'steps' should be displayed

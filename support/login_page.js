@@ -4,10 +4,10 @@ class LoginPage extends Page{
         super();
         this.url = 'http://localhost:4200/login';
         this.data = {
-            logo: element(by.id('logo')),
-            'user name': element(by.id('username')),
-            password: element(by.id('password')),
-            'login button': element(by.id('login'))
+            logo: by.id('logo'),
+            'user name': by.id('username'),
+            password: by.id('password'),
+            'login button': by.id('login')
         }
     }
     async login(name,pass){

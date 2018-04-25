@@ -4,9 +4,15 @@ class BasePage extends Page{
         super();
         this.url = 'http://localhost:4200/base';
         this.data = {
-            logo: element(by.id('logo')),
-            steps: element(by.css('.steps-container')),
-            'go button': element(by.id('goFoodsBtn'))
+            logo: by.id('logo'),
+            steps: by.css('.steps-container'),
+            'go button': by.id('goFoodsBtn'),
+            table: {
+                cells: by.css('.table_cell')
+            },
+            list: {
+                row: by.css('.list_row')
+            },
         }
     }
 }
