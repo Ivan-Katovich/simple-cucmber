@@ -4,15 +4,8 @@ Feature: first feature
   I can open app
   So all functionality of app should work fine
 
-  @first-one
-  Scenario: first scenario
-    When I am logged in to the application with default state
-    Then Element 'logo' should be displayed
-    Then Element 'steps' should be displayed
-    Then Element 'go button' should be displayed
-
   @third-one
-  Scenario: second scenario
+  Scenario: third scenario
     Given I am on the 'login page'
     When I login to the application
     Then '1'st item in 'list' should contain 'adress' row with text 'Tolstogo 10'
