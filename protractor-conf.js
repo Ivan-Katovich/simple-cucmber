@@ -1,6 +1,8 @@
 
-exports.config = {
+const tags = process.env.npm_config_tags ? process.env.npm_config_tags.split(',') : [];
+tags.push('~@ignore');
 
+exports.config = {
 
     specs: 'features/*.feature',
 
@@ -19,7 +21,8 @@ exports.config = {
     cucumberOpts: {
         require: [
             'step_definitions/*.js'
-        ]
+        ],
+        tags: tags
     },
 
     allScriptsTimeout: 120000
