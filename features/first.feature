@@ -12,7 +12,6 @@ Feature: first feature
     Then Element 'password' should be displayed
     Then Element 'login button' should be displayed
 
-
   @second-scenario @visibility
   Scenario: second scenario
     Given I am on the 'login page'
@@ -21,7 +20,6 @@ Feature: first feature
     When I login to the application
     Then Element 'logo' should be displayed
     Then Element 'steps' should be displayed
-
 
   @third-scenario @text-checking
   Scenario: third scenario
