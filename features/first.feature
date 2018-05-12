@@ -8,5 +8,5 @@ Feature: first feature
   Scenario: first scenario
     When I am logged in to the application with default state
     Then Element 'logo' should be visible
-    Then Element 'steps' should be visible
-    Then Element 'go button' should be visible
+    And Element 'steps' should be visible
+    And Element 'go button' should be visible
