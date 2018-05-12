@@ -4,19 +4,12 @@ Feature: first feature
   I can open app
   So all functionality of app should work fine
 
-  @first-one
-  Scenario: first scenario
-    When I am logged in to the application with default state
-    Then Element 'logo' should be displayed
-    Then Element 'steps' should be displayed
-    Then Element 'go button' should be displayed
-
-  @first-one
+  @second-one
   Scenario: second scenario
     Given I am on the 'login page'
     Then Element 'logo' should be displayed
-    Then Element 'login button' should be displayed
+    And Element 'login button' should be displayed
     When I login to the application
     Then Element 'logo' should be displayed
-    Then Element 'steps' should be displayed
+    And Element 'steps' should be displayed
 
